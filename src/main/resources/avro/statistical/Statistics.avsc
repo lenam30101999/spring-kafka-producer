@@ -1,0 +1,36 @@
+{
+    "type": "record",
+    "name": "Statistics",
+    "namespace": "chozoi.statistical.content",
+    "fields": [
+        {
+            "name": "id",
+            "type": {
+                "type": "string",
+                "connect.version": 1,
+                "connect.name": "io.debezium.data.Uuid"
+            }
+        },
+        {
+            "name": "content",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "type",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "created_at",
+            "type": "long",
+            "default": 0
+        }
+    ]
+}
